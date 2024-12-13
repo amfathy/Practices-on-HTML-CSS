@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <title>AF Store</title>
+</head>
+
+<body>
+    <nav>
+        <div id="nav-container">
+
+            <!-- First Section -->
+            <div id="nav-1st-Section">
+                <div>
+                    <img id="logo" src="images/logo.png" alt="Logo image">
+                </div>
+            </div>
+
+            <!-- Second Section -->
+            <div id="nav-2nd-section">
+                <form>
+                    <input type="text" placeholder="Search"> 
+                    <button id="search-button">
+                        <i class="material-icons">search</i>
+                    </button>
+                </form>
+            </div>
+    
+
+            <!-- Third Section -->
+            <div id="nav-3rd-section">
+                <input type="text" id="MinPrice" placeholder="Min ">
+                <input type="text" id="maxPrice"  placeholder="Max ">
+
+                <!-- Sort By Price Dropdown -->
+                <div class="dropdown">
+                    <button id="sortByPrice" class="dropdown-button">Sort By Price</button>
+                    <ul class="dropdown-content">
+                        <li><button onclick="assendingProducts()" >Low to High</button></li>
+                        <li><button onclick="dessendingProducts()">High to Low</button></li>
+                    </ul>
+                </div>
+
+                <button id="applyFilter">
+                    <span>Apply Filter</span>
+                </button>
+
+                <button id="shoppingCartButton" onclick="displayCart()">
+                    <span>shopping Cart</span>
+                </button>
+
+
+            </div>
+
+        </div>
+    
+    </nav>
+    <hr >
+
+    <!--main content-->
+
+    <div id="main-content">
+        <!-- <div class="product-box">
+            <img src="images/product1.jpg" alt="Product 1" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Product Title 1</h3>
+                <p class="product-price">$99.99</p>
+            </div>
+            <div class="product-buttons">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    
+        <div class="product-box">
+            <img src="images/product1.jpg" alt="Product 2" class="product-image">
+            <div class="product-details">
+                <h3 class="product-title">Product Title 2</h3>
+                <p class="product-price">$79.99</p>
+            </div>
+            <div class="product-buttons">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div> -->
+    </div>
+    
+    <!--view Details-->
+    <div id="productModel" class="model" >
+        <div class="model-content">
+            <span class="close-button" onclick="closeModel()">&times;</span>
+            <img id="modelImage" src="" alt="Product Image" class="model-image">
+            <h3 id="modelTitle"></h3>
+            <p id="modelPrice"></p>
+            <p id="modelDescription"></p>
+        </div>
+    </div>
+    <!--CART-->
+
+    <div id="shoppingCart">
+        <div id="productCart" > 
+            <!-- <div class="product-item">
+                <img src="images/product1.jpg" alt="Product Image">
+                <div class="description-cart">
+                    <p class="title-product-cart">Product Title</p>
+                    <p class="price-product-cart">$99.99</p>
+                </div>
+                <button class="remove-button" >Remove</button>
+            </div>
+            <div class="product-item"  >
+                <img src="images/product1.jpg" alt="Product Image">
+                <div class="description-cart">
+                    <p class="title-product-cart">Another Product</p>
+                    <p class="price-product-cart">$129.99</p>
+                </div>
+                <button class="remove-button" >Remove</button>
+            </div> -->
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
+
