@@ -21,8 +21,8 @@
 
             <!-- Second Section -->
             <div id="nav-2nd-section">
-                <form>
-                    <input type="text" placeholder="Search"> 
+                <form id=>
+                    <input id ="search-bar" type="text" placeholder="Search"> 
                     <button id="search-button">
                         <i class="material-icons">search</i>
                     </button>
@@ -32,19 +32,19 @@
 
             <!-- Third Section -->
             <div id="nav-3rd-section">
-                <input type="text" id="MinPrice" placeholder="Min ">
+                <input type="text" id="minprice" placeholder="Min " >
                 <input type="text" id="maxPrice"  placeholder="Max ">
 
                 <!-- Sort By Price Dropdown -->
                 <div class="dropdown">
                     <button id="sortByPrice" class="dropdown-button">Sort By Price</button>
                     <ul class="dropdown-content">
-                        <li><button onclick="assendingProducts()" >Low to High</button></li>
-                        <li><button onclick="dessendingProducts()">High to Low</button></li>
+                        <li><button id="assending">Low to High</button></li>
+                        <li><button id="dessinding">High to Low</button></li>
                     </ul>
                 </div>
 
-                <button id="applyFilter">
+                <button id="apply-Filter">
                     <span>Apply Filter</span>
                 </button>
 
@@ -102,6 +102,7 @@
 
     <div id="shoppingCart">
         <div id="productCart" > 
+            
             <!-- <div class="product-item">
                 <img src="images/product1.jpg" alt="Product Image">
                 <div class="description-cart">
@@ -118,6 +119,7 @@
                 </div>
                 <button class="remove-button" >Remove</button>
             </div> -->
+
         </div>
     </div>
     
